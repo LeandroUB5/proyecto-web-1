@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: pink;
+}
+
+#promo{
+    background-color: aqua;
+}
+
+#productos-index{
+    background-color: blueviolet;
+}
+
+#descuento{
+    background-color: brown;
+}
+
+#marcas{
+    background-color: orange;
+}
+
+footer{
+    background-color: green;
+}
