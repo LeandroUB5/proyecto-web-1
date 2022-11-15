@@ -158,3 +158,23 @@ footer .contacto-footer p a{
 footer .whatsapp img, .instagram img{
     width: 100px;
 }
+
+/* Pagina de Productos */
+#productos{
+    background-color: white;
+}
+#productos .productos-pagina{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;    
+}
+#productos .productos-pagina .calzado-4-cont, .calzado-5-cont, .calzado-6-cont, .calzado-7-cont, .remera-vel-cont, .remera-rac-cont, .remera-boc-2-cont, .remera-ban-cont {
+    border: 4px solid;
+    padding: 10px;
+    width: fit-content;
+    justify-self: center;
+    background-color: aqua;
+}
+#productos .productos-pagina .calzado-4-cont img, .calzado-5-cont img, .calzado-6-cont img, .calzado-7-cont img, .remera-vel-cont img, .remera-rac-cont img, .remera-boc-2-cont img, .remera-ban-cont img{
+    width: 240px;
+}
