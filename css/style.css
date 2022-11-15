@@ -3,27 +3,163 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Header */
 #header {
     background-color: pink;
+    padding: 10px solid black;
+    border: 2px solid black;
+    position: sticky;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr .4fr;
+    height: 120px;
+    border-radius: 5px;
+}
+#header .header-content{
+    display: flex;
+    margin: 10px 8px;
+}
+#header .header-content .header-content-logo img {
+    background-size: cover;
+    border: 6px solid;
+    width: 100px;
+    border-radius: 10px;
+}
+#header .header-content .header-content-titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#header .menu {
+    align-self: center;
+    justify-self: center;
 }
 
+#header .menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#header .menu ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+#header .menu ul li a:hover{
+    background-color: purple;
+    color: white;
+}
+#header .login{
+    align-self: center;
+}
+#header .login button{
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to rigth, #00dbde 0%, #fc00ff 100%);
+}
+
+/* Descuento */
 #promo{
+    background-color: white;
+}
+
+#promo h2{
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+}
+#promo .img-descuento{
+    width: fit-content;
+    margin: auto;
+}
+#promo .img-descuento img{
+    width: 1000px;
+}
+
+/* Productos */
+#productos-index{
+    background-color: white;
+}
+#productos-index .productos-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+#productos-index .productos-cont .calzado-1-cont, .calzado-2-cont, .calzado-3-cont, .conjunto-arg-cont, .conjunto-riv-cont, .remera-boc-cont{
+    border: 4px solid;
+    padding: 10px;
+    width: fit-content;
+    justify-self: center;
     background-color: aqua;
 }
-
-#productos-index{
-    background-color: blueviolet;
+#productos-index .productos-cont .calzado-1-cont img, .calzado-2-cont img, .calzado-3-cont img, .conjunto-arg-cont img, .conjunto-riv-cont img, .remera-boc-cont img{
+    width: 300px;
+    height: 200px;
 }
 
+/* Descuento */
 #descuento{
-    background-color: brown;
+    background-color: white;
+}
+#descuento .descuento-cont{
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
 }
 
+/* Marcas */
 #marcas{
-    background-color: orange;
+    background-color: white;
+}
+#marcas .marcas_content{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+#marcas .marcas_content .marca__1, .marca__2, .marca__3, .marca__4, .marca__5, .marca__6{
+    margin-right: 30px;
+    margin-top: 10px;
+}
+#marcas .marcas_content .marca__1 img, .marca__2 img, .marca__3 img, .marca__4 img, .marca__5 img, .marca__6 img{
+    width: 100px;
+    height: 60px;
+}
+#marcas .marcas_content .marca__1 p, .marca__2 p, .marca__3 p, .marca__4 p, .marca__5 p, .marca__6 p{
+    text-align: center;
 }
 
+/* footer */
 footer{
     background-color: green;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .contacto-footer, .whatsapp, .instagram{
+    width: fit-content;
+    margin-top: 15px;
+}
+footer .contacto-footer p a{
+    text-decoration: none;
+    color: black;
+}
+footer .whatsapp img, .instagram img{
+    width: 100px;
+}
+footer .contacto-footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
