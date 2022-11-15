@@ -224,3 +224,24 @@ footer .whatsapp img, .instagram img{
     width: 320px;
     justify-self: center;
 }
+
+/* Pagina de contacto */
+#formulario{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: aqua;
+}
+#formulario form fieldset{
+    padding: 10px;
+}
+#formulario form fieldset .submit{
+    text-align: center;
+}
+#formulario form fieldset div{
+    margin-bottom: 30px;
+    font-size: x-large;
+    font-family: serif;
+    padding-left: 10px;
+}

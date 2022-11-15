@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo/Sin título.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="header-content-logo">
+               <a href="../index.html"><img src="../img/logo/Sin título.png" alt="Logo"></a> 
+            </div>
+            <div class="header-content-titulo">
+                <h1>BanSport</h1>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ubicacion.html">Ubicacion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <button type="submit">Login</button>
+        </div>
+    </header>
+    <Section id="formulario">
+        <form action="enviar.php" method="get">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Ingrese su Nombre" required>
+                </div>
+                <div>
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" placeholder="Ingrese su Apellido" required>
+                </div>
+                <div>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Ingrese su Email" required>
+                </div>
+                <div>
+                <label for="locality">Localidad</label>
+                <input type="text" id="locality" placeholder="Ingrese su Localidad" required>
+                </div>
+                <div>
+                <label for="telephone">Teléfono</label>
+                <input type="number" id="telephone" placeholder="Ingrese su Telefono" pattern="[0-9]*" required>
+                </div>
+                <div>
+                <label for="asunto">Asunto</label>
+                <select name="asunto" id="asunto" required>
+                    <option value=>Seleccione</option>
+                    <option value="Consulta de Stock de sucursales">Consulta de Stock de sucursales</option>
+                    <option value="Horarios sucursales">Horarios sucursales</option>
+                    <option value="No se realizar compra On-line">No se realizar compra On-line</option>
+                    <option value="Otras Consultas">Otras consultas</option>
+                </select>
+                </div>
+                <div>
+                <label for="comentario">Deje su mensaje</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="3" placeholder="Deje su comentario aqui"></textarea>
+                </div>
+                <div class="submit">
+                <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+
+        </form>
+    </Section>
+    <section id="descuento">
+        <div class="descuento-cont">
+            <img src="../img/Descuento/targeta descuento.jpg" alt="TargetaDescuento">
+        </div>
+    </section>
+    <section id="marcas">
+        <div class="marcas_content">
+            <div class="marca__1">
+                <div>
+                    <img src="../Img/Marcas/adidas.jpg" alt="Adidas">
+                </div>
+                <div>
+                    <p>Adidas</p>
+                </div>
+            </div>
+            <div class="marca__2">
+                <div>
+                    <img src="../Img/Marcas/kappa.jpg" alt="Kappa">
+                </div>
+                <div>
+                    <p>Kappa</p>
+                </div>
+            </div>
+            <div class="marca__3">
+                <div>
+                    <img src="../Img/Marcas/lacoste.jpg" alt="Lacoste">
+                </div>
+                <div>
+                    <p>Lacoste</p>
+                </div>
+            </div>
+            <div class="marca__4">
+                <div>
+                    <img src="../Img/Marcas/nike.jpg" alt="Nike">
+                </div>
+                <div>
+                    <p>Nike</p>
+                </div>
+            </div>
+            <div class="marca__5">
+                <div>
+                    <img src="../Img/Marcas/puma.jpg" alt="Puma">
+                </div>
+                <div>
+                    <p>Puma</p>
+                </div>
+            </div>
+            <div class="marca__6">
+                <div>
+                    <img src="../Img/Marcas/topper.jpg" alt="Topper">
+                </div>
+                <div>
+                    <p>Topper</p>
+                </div>
+            </div>
+        </div>    
+    </section>}
+</body>
+<footer>
+    <div class="contacto-footer">
+        <p><a href="../pages/contacto.html">Contacto</a></p>
+    </div>
+    <div class="whatsapp">
+        <a href="https://web.whatsapp.com" target="_blank"><img src="../img/Redes Sociales/whatsap.png" alt="Whatsapp"></a>
+    </div>
+    <div class="instagram">
+        <a href="https://www.instagram.com" target="_blank"><img src="../img/Redes Sociales/instagram.webp" alt="Instagram"></a>
+    </div>
+</footer>
+</html>
