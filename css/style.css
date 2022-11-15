@@ -178,3 +178,35 @@ footer .whatsapp img, .instagram img{
 #productos .productos-pagina .calzado-4-cont img, .calzado-5-cont img, .calzado-6-cont img, .calzado-7-cont img, .remera-vel-cont img, .remera-rac-cont img, .remera-boc-2-cont img, .remera-ban-cont img{
     width: 240px;
 }
+
+/* Pagina de nosotros */
+.titulo-nosotros {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: x-large;
+    width: fit-content;
+}
+.titulo-nosotros h2{
+    padding: 10px;
+    margin-left: 850px;
+    background-color: orange;
+}
+#nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#nosotros .nosotros-text{
+    border: 5px dashed;
+    padding: 20px;
+    width: 500px;
+}
+#nosotros .nosotros-text p{
+    font-size: x-large;
+    font-family: sans-serif;
+}
+#nosotros .nosotros-img img{
+    margin-left: 200px;
+    width: 700px;
+}
