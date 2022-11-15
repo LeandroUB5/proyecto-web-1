@@ -158,8 +158,3 @@ footer .contacto-footer p a{
 footer .whatsapp img, .instagram img{
     width: 100px;
 }
-footer .contacto-footer{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
