@@ -72,7 +72,7 @@
     background-color: white;
 }
 
-#promo h2{
+#promo h2, .titulo-productos, .titulo-sucursales{
     width: fit-content;
     margin: auto;
     font-size: 40px;
@@ -209,4 +209,18 @@ footer .whatsapp img, .instagram img{
 #nosotros .nosotros-img img{
     margin-left: 200px;
     width: 700px;
+}
+
+/* Pagina Ubicacion */
+#ubicacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+#ubicacion .mapas-ubicacion{
+    border: 2px solid;
+    padding: 10px;
+    width: 320px;
+    justify-self: center;
 }
