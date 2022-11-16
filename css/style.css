@@ -63,7 +63,7 @@
     font-size: 18px;
     color: white;
     border-radius: 25px;
-    background-image: linear-gradient(to rigth, #00dbde 0%, #fc00ff 100%);
+    background-color: linear-gradient(to rigth, #00dbde 0%, #fc00ff 100%);
 }
 
 /* Promo */
@@ -247,3 +247,118 @@ footer .whatsapp img, .instagram img{
     font-family: serif;
     padding-left: 10px;
 }
+
+/* Media */
+@media (max-width:653px){
+    #header{
+        position: relative;
+    }
+    #header .header-content{
+        flex-direction: column;
+    }
+    #header .header-content .header-content-logo, .header-content-titulo{
+        margin: auto;
+    }
+    #header .header-content .header-content-titulo, #promo h2, .titulo-productos{
+        font-size: 25px;
+    }
+    #promo .img-descuento img{
+        width: 100%;
+    }
+    #productos-index .productos-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 3px;
+    }
+    #productos-index .productos-cont .calzado-1-cont, .calzado-2-cont, .calzado-3-cont, .conjunto-arg-cont, .conjunto-riv-cont, .remera-boc-cont{
+        width: 186px;
+    }
+    #productos-index .productos-cont .calzado-1-cont img, .calzado-2-cont img, .calzado-3-cont img, .conjunto-arg-cont img, .conjunto-riv-cont img, .remera-boc-cont img{
+        width: 150px;
+        height: 100px;
+    }
+    #descuento .descuento-cont img{
+        width: 100%;
+    }
+    #marcas .marcas_content{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;    
+    }
+
+}
+@media (max-width:890px){
+    #header{
+        grid-template-columns: 1fr;
+        height: auto;
+        position: relative;
+    }
+    #header .header-content {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #header .menu ul li {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #header .login{
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    #header .header-content .header-content-titulo, #promo h2, .titulo-productos{
+        font-size: 30px;
+    }
+    #promo .img-descuento img, #descuento .descuento-cont img{
+        width: 100%;
+    }
+    #productos-index .productos-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:890px) and (max-width:1000px){
+    #promo .img-descuento img{
+        width: 100%;
+    }
+}
+@media (min-width:890px) and (max-width:1737px){
+    #descuento .descuento-cont img{
+        width: 100%;
+        margin: auto;
+    }
+}
+/* Pagina productos responsive */
+@media (max-width:653px){
+    #productos .productos-pagina{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 3px;
+    }
+    #productos .productos-pagina .calzado-4-cont, .calzado-5-cont, .calzado-6-cont, .calzado-7-cont, .remera-vel-cont, .remera-rac-cont, .remera-boc-2-cont, .remera-ban-cont{
+        width: 186px;
+    }   
+    #productos .productos-pagina .calzado-4-cont img, .calzado-5-cont img, .calzado-6-cont img, .calzado-7-cont img, .remera-vel-cont img, .remera-rac-cont img, .remera-boc-2-cont img, .remera-ban-cont img{
+        width: 150px;
+        height: 100px;
+    }
+}
+/* Pagina productos */
+@media (min-width:562px) and (max-width:1106px){
+    #productos .productos-pagina{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #productos .productos-pagina .calzado-4-cont, .calzado-5-cont, .calzado-6-cont, .calzado-7-cont, .remera-vel-cont, .remera-rac-cont, .remera-boc-2-cont, .remera-ban-cont{
+        width: 186px;
+    } 
+    #productos .productos-pagina .calzado-4-cont img, .calzado-5-cont img, .calzado-6-cont img, .calzado-7-cont img, .remera-vel-cont img, .remera-rac-cont img, .remera-boc-2-cont img, .remera-ban-cont img{
+        width: 120px;
+        height: 100px;
+    }
+}
+
