@@ -64,7 +64,7 @@
     font-size: 18px;
     color: white;
     border-radius: 25px;
-    background-color: linear-gradient(to rigth, #00dbde 0%, #fc00ff 100%);
+    background: linear-gradient(to right, #00dbde, #fc00ff) !important;
 }
 
 /* Promo */
