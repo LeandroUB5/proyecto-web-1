@@ -1,0 +1,178 @@
+@import "reset";
+@import "head-foot";
+@import "desc-marc";
+
+@mixin tittle {
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+}
+/* index-promo */
+#promo{
+    background-color: white;
+    & h2{
+        @include tittle;
+    }
+    & .img-descuento{
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+        img{
+            width: 1000px;
+        }
+    }
+}
+/* Productos index */
+#productos-index{
+    background-color: white;
+    & .productos-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        .calzado-1-cont{
+            border: 4px solid;
+            border-radius: 10px;
+            padding: 10px;
+            width: fit-content;
+            justify-self: center;
+            background-color: aqua;
+            img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+        .calzado-2-cont{
+            @extend .calzado-1-cont;
+        }
+        .calzado-3-cont{
+            @extend .calzado-1-cont;
+        }
+        .conjunto-arg-cont{
+            @extend .calzado-1-cont;
+        }
+        .conjunto-riv-cont{
+            @extend .calzado-1-cont;
+        }
+        .remera-boc-cont{
+            @extend .calzado-1-cont;
+        }
+    }
+}
+
+/* Productos pag */
+.titulo-productos{
+    @include tittle;
+}
+#productos{
+    background-color: white;
+    .productos-pagina{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;   
+        margin: {
+            top: 10px; 
+            bottom: 10px;
+        }
+        .calzado-4-cont{
+            border: 4px solid;
+            border-radius: 10px;
+            padding: 10px;
+            width: fit-content;
+            justify-self: center;
+            background-color: aqua;
+            img{
+                width: 240px;
+            }
+        }
+        .calzado-5-cont{
+            @extend .calzado-4-cont;
+        }
+        .calzado-6-cont{
+            @extend .calzado-4-cont;
+        }
+        .calzado-7-cont{
+            @extend .calzado-4-cont;
+        }
+        .remera-vel-cont{
+            @extend .calzado-4-cont;
+        }
+        .remera-rac-cont{
+            @extend .calzado-4-cont;
+        }
+        .remera-boc-2-cont{
+            @extend .calzado-4-cont;
+        }
+        .remera-ban-cont{
+            @extend .calzado-4-cont;
+        }
+    }
+}
+
+/* Pagina Nosotros */
+.titulo-nosotros{
+    @include tittle;
+}
+#nosotros{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: {
+        top: 10px;
+        left: 100px;
+    }
+    .nosotros-text{
+        border: 5px dashed;
+        padding: 20px;
+        width: 700px;
+        p{
+            font: {
+                size: x-large;
+                family: sans-serif;
+            }
+            text-align: justify;
+        }
+    }
+}
+
+/* Pagina Ubicacion */
+.titulo-sucursales{
+    @include tittle;
+}
+#ubicacion{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    .mapas-ubicacion{
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        width: 320px;
+        justify-self: center;
+    }
+}
+
+/* Pagina Contacto */
+#formulario{
+    width: fit-content;
+    margin: auto;
+    margin: {
+        top: 20px;
+        bottom: 15px;
+    }
+    background-color: aqua;
+    form fieldset{
+        padding: 10px;
+        .submit{
+            text-align: center;
+        }
+        div{
+            margin-bottom: 25px;
+            font: {
+                size: x-large;
+                family: sans-serif;
+            }
+            padding-left: 10px;
+        }
+    }
+}

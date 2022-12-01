@@ -1,0 +1,44 @@
+#descuento{
+    background-color: white;
+    & .descuento-cont{
+        padding: 10px;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+#marcas{
+    background-color: white;
+    & .marcas_content{
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        margin-bottom: 10px;
+        .marca__1{
+            margin-right: 30px;
+            margin-top: 10px;
+            img{
+                width: 100px;
+                height: 60px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .marca__2{
+            @extend .marca__1;
+        }
+        .marca__3{
+            @extend .marca__1;
+        }
+        .marca__4{
+            @extend .marca__1;
+        }
+        .marca__5{
+            @extend .marca__1;
+        }
+        .marca__6{
+            @extend .marca__1;
+        }
+    }
+}
