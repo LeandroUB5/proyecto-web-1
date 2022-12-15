@@ -11,7 +11,7 @@
     background-color: aqua;
 }
 .fondo-cont{
-    background-image: url("../img/fondo/logopagfondo3.png");
+    background-image: url("../img/fondo/logopagfondo.png");
     padding-top: 10px;
     padding-bottom: 10px;
     /* index-promo */
@@ -196,6 +196,83 @@
             }
             padding-left: 10px;
         }
+    }
+}
+/* Pagina inicio sesion */
+#body-inicio-ses{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo/fondo-desen.png);
+    background-size: cover;
+    justify-content: center;
+    .header-content-logo{
+        width: 153px;
+        height: 144px;
+        justify-self: center;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        img{
+            width: 153px;
+            height: 144px;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+    }
+    .inicio-sesion-cont{
+        width: 500px;
+        height: 500px;
+        border: 3px solid;
+        background-color: white;
+        justify-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+            h4{
+                text-align: center;
+                font-size: 30px;
+                font-family: sans-serif;
+                margin-top: 15px;
+            }
+            .email-inicio{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                #mail{
+                    width: 300px;
+                    height: 24px;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            }
+            .pass-inicio{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                #pass{
+                    width: 300px;
+                    height: 24px;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            }
+            .cbox1-inicio{
+                margin-top: 15px
+            }
+            .login-inicio{
+                button{
+                    width: 150px;
+                    height: 30px;
+                    font-size: 18px;
+                    color: white;
+                    border-radius: 25px;
+                    background: linear-gradient(to right, #00dbde, #fc00ff) !important;
+                }
+            }
     }
 }
 @import "media";
