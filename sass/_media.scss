@@ -1,81 +1,83 @@
 
 @media (max-width:374px){
-    #header{
-        position: relative;
-        grid-template-columns: 1fr;
-        height: auto;
-        .header-content{
-            align-items: center;
-            .header-content-titulo{
-                font-size: 30px;
+    body{
+        width: 100%;
+        #header{
+            position: relative;
+            grid-template-columns: 1fr;
+            height: auto;
+            .header-content{
+                align-items: center;
+                .header-content-titulo{
+                    font-size: 30px;
+                }
+            }
+            .menu{
+                ul li{
+                    margin: auto;
+                }
+            }
+            .login{
+                justify-self: center;
+                a{
+                    margin: 10px;
+                }
             }
         }
-        .menu{
-            ul li{
-                margin: auto;
+        .fondo-cont{
+            #promo{
+                h2{
+                    font-size: 25px;
+                    padding: 5px;
+                }
+                .img-descuento{
+                    img{
+                        width: 100%;
+                    }
+                }
             }
-        }
-        .login{
-            justify-self: center;
-            a{
-                margin: 10px 0;
+            #productos-index{
+                .productos-cont{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
             }
-        }
-    }
-    .fondo-cont{
-        #promo{
-            h2{
+            #marcas{
+                .marcas_content{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                }
+                .marca__1{
+                    margin: auto;
+                }
+            }
+            .titulo-productos{
                 font-size: 25px;
                 padding: 5px;
             }
-            .img-descuento{
+            #productos{
+                .productos-pagina{
+                    grid-template-columns: 1fr;
+                }
+            }
+            .titulo-nosotros{
+                font-size: 25px;
+                padding: 5px;
+            }
+            #nosotros{
+                flex-direction: column;
+                margin: auto;
+            }
+            .nosotros-img{
                 img{
                     width: 100%;
                 }
             }
-        }
-        #productos-index{
-            .productos-cont{
-                display: grid;
-                grid-template-columns: 1fr;
+            .titulo-sucursales{
+                font-size: 25px;
+                padding: 5px;
             }
-        }
-        #marcas{
-            .marcas_content{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
-            .marca__1{
-                margin: auto;
-            }
-        }
-        .titulo-productos{
-            font-size: 25px;
-            padding: 5px;
-        }
-        #productos{
-            .productos-pagina{
-                grid-template-columns: 1fr;
-            }
-        }
-        .titulo-nosotros{
-            font-size: 25px;
-            padding: 5px;
-        }
-        #nosotros{
-            flex-direction: column;
-            margin: auto;
-        }
-        .nosotros-img{
-            img{
-                width: 100%;
-            }
-        }
-        .titulo-sucursales{
-            font-size: 25px;
-            padding: 5px;
-        }
         #ubicacion{
             grid-template-columns: 1fr;
         }
@@ -88,6 +90,7 @@
             flex-direction: column;
         }
     }
+}
 }
 @media (max-width:653px){
     #header{

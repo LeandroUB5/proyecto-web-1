@@ -74,6 +74,7 @@
   border: 3px white solid;
   padding: 5px;
   border-radius: 25px;
+  margin: 10px;
   background: linear-gradient(to right, #00dbde, #fc00ff) !important;
 }
 
@@ -214,6 +215,7 @@ footer .whatsapp img, footer .instagram img {
   width: fit-content;
   justify-self: center;
   background-color: aqua;
+  overflow-x: hidden;
 }
 #productos .productos-pagina .calzado-4-cont img, #productos .productos-pagina .remera-ban-cont img, #productos .productos-pagina .remera-boc-2-cont img, #productos .productos-pagina .remera-rac-cont img, #productos .productos-pagina .remera-vel-cont img, #productos .productos-pagina .calzado-7-cont img, #productos .productos-pagina .calzado-6-cont img, #productos .productos-pagina .calzado-5-cont img {
   width: 240px;
@@ -382,76 +384,79 @@ footer .whatsapp img, footer .instagram img {
 }
 
 @media (max-width: 374px) {
-  #header {
+  body {
+    width: 100%;
+  }
+  body #header {
     position: relative;
     grid-template-columns: 1fr;
     height: auto;
   }
-  #header .header-content {
+  body #header .header-content {
     align-items: center;
   }
-  #header .header-content .header-content-titulo {
+  body #header .header-content .header-content-titulo {
     font-size: 30px;
   }
-  #header .menu ul li {
+  body #header .menu ul li {
     margin: auto;
   }
-  #header .login {
+  body #header .login {
     justify-self: center;
   }
-  #header .login a {
-    margin: 10px 0;
+  body #header .login a {
+    margin: 10px;
   }
-  .fondo-cont #promo h2 {
+  body .fondo-cont #promo h2 {
     font-size: 25px;
     padding: 5px;
   }
-  .fondo-cont #promo .img-descuento img {
+  body .fondo-cont #promo .img-descuento img {
     width: 100%;
   }
-  .fondo-cont #productos-index .productos-cont {
+  body .fondo-cont #productos-index .productos-cont {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .fondo-cont #marcas .marcas_content {
+  body .fondo-cont #marcas .marcas_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-  .fondo-cont #marcas .marca__1, .fondo-cont #marcas .marcas_content .marca__2, .fondo-cont #marcas .marcas_content .marca__3, .fondo-cont #marcas .marcas_content .marca__4, .fondo-cont #marcas .marcas_content .marca__5, .fondo-cont #marcas .marcas_content .marca__6 {
+  body .fondo-cont #marcas .marca__1, body .fondo-cont #marcas .marcas_content .marca__2, body .fondo-cont #marcas .marcas_content .marca__3, body .fondo-cont #marcas .marcas_content .marca__4, body .fondo-cont #marcas .marcas_content .marca__5, body .fondo-cont #marcas .marcas_content .marca__6 {
     margin: auto;
   }
-  .fondo-cont .titulo-productos {
+  body .fondo-cont .titulo-productos {
     font-size: 25px;
     padding: 5px;
   }
-  .fondo-cont #productos .productos-pagina {
+  body .fondo-cont #productos .productos-pagina {
     grid-template-columns: 1fr;
   }
-  .fondo-cont .titulo-nosotros {
+  body .fondo-cont .titulo-nosotros {
     font-size: 25px;
     padding: 5px;
   }
-  .fondo-cont #nosotros {
+  body .fondo-cont #nosotros {
     flex-direction: column;
     margin: auto;
   }
-  .fondo-cont .nosotros-img img {
+  body .fondo-cont .nosotros-img img {
     width: 100%;
   }
-  .fondo-cont .titulo-sucursales {
+  body .fondo-cont .titulo-sucursales {
     font-size: 25px;
     padding: 5px;
   }
-  .fondo-cont #ubicacion {
+  body .fondo-cont #ubicacion {
     grid-template-columns: 1fr;
   }
-  #body-inicio-ses {
+  body #body-inicio-ses {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  #body-inicio-ses .header-content-logo {
+  body #body-inicio-ses .header-content-logo {
     flex-direction: column;
   }
 }
