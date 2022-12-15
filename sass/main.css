@@ -398,6 +398,8 @@ footer .whatsapp img, footer .instagram img {
   }
   #header .login {
     justify-self: center;
+  }
+  #header .login a {
     margin: 10px 0;
   }
   .fondo-cont #promo h2 {
