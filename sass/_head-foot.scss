@@ -28,23 +28,27 @@
     & .menu {
         align-self: center;
         justify-self: center;
-        ul li{
-            list-style: none;
+        ul{
             display: flex;
-            margin: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            a{
-                text-decoration: none;
-                color: black;
-                background-color: white;
-                padding: 5px;
-                border: 2px solid;
-                border-radius: 15px;
-                &:hover{
-                    background-color: purple;
-                    color: white;
-                }
+            flex-wrap: wrap;
+            li{
+                list-style: none;
+                display: flex;
+                margin: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    padding: 5px;
+                    border: 2px solid;
+                    border-radius: 15px;
+                    &:hover{
+                        background-color: purple;
+                        color: white;
+                    }
+                } 
             }
         }
     }

@@ -37,6 +37,10 @@
   align-self: center;
   justify-self: center;
 }
+#header .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 #header .menu ul li {
   list-style: none;
   display: flex;
@@ -391,7 +395,6 @@ footer .whatsapp img, footer .instagram img {
   }
   #header .menu ul li {
     margin: auto;
-    margin: 10px 0px;
   }
   #header .login {
     justify-self: center;
