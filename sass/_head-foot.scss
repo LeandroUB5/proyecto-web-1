@@ -30,9 +30,10 @@
         justify-self: center;
         ul li{
             list-style: none;
-            display: inline-block;
+            display: flex;
             margin: 20px;
             margin-top: 10px;
+            margin-bottom: 10px;
             a{
                 text-decoration: none;
                 color: black;
@@ -49,7 +50,6 @@
     }
     & .login{
         align-self: center;
-        margin: 10px 0px;
         a{
             width: fit-content;
             display: block;
@@ -57,7 +57,7 @@
             font-size: 18px;
             color: white;
             border: 3px white solid;
-            padding: 7px;
+            padding: 5px;
             border-radius: 25px;
             background: linear-gradient(to right, #00dbde, #fc00ff) !important;
         }
