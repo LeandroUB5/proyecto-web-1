@@ -74,14 +74,14 @@ footer .contacto-footer {
   font-size: 30px;
   margin-top: 15px;
 }
+footer .contacto-footer a {
+  text-decoration: none;
+}
 footer .whatsapp, footer .instagram {
   margin-top: 15px;
 }
 footer .whatsapp img, footer .instagram img {
   width: 100px;
-}
-#descuento {
-  background-color: white;
 }
 #descuento .descuento-cont {
   padding: 10px;
@@ -90,61 +90,65 @@ footer .whatsapp img, footer .instagram img {
   width: fit-content;
   margin: auto;
 }
-
-#marcas {
-  background-color: white;
+#descuento .descuento-cont img {
+  width: 100%;
 }
+
 #marcas .marcas_content {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   display: flex;
-  margin-bottom: 10px;
 }
 #marcas .marcas_content .marca__1, #marcas .marcas_content .marca__6, #marcas .marcas_content .marca__5, #marcas .marcas_content .marca__4, #marcas .marcas_content .marca__3, #marcas .marcas_content .marca__2 {
   margin-right: 30px;
   margin-top: 10px;
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: #c3c3c3;
 }
 #marcas .marcas_content .marca__1 img, #marcas .marcas_content .marca__6 img, #marcas .marcas_content .marca__5 img, #marcas .marcas_content .marca__4 img, #marcas .marcas_content .marca__3 img, #marcas .marcas_content .marca__2 img {
   width: 100px;
   height: 60px;
+  border-radius: 10px;
 }
 #marcas .marcas_content .marca__1 p, #marcas .marcas_content .marca__6 p, #marcas .marcas_content .marca__5 p, #marcas .marcas_content .marca__4 p, #marcas .marcas_content .marca__3 p, #marcas .marcas_content .marca__2 p {
   text-align: center;
 }
-/* index-promo */
-#promo {
-  background-color: white;
+.fondo-cont {
+  background-image: url("../img/fondo/logopagfondo3.png");
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* index-promo */
+  /* Productos index */
 }
-#promo h2 {
+.fondo-cont #promo h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   font-size: 40px;
+  border: 3px solid;
+  border-radius: 15px;
+  background-color: aqua;
 }
-#promo .img-descuento {
+.fondo-cont #promo .img-descuento {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   margin-top: 10px;
 }
-#promo .img-descuento img {
+.fondo-cont #promo .img-descuento img {
   width: 1000px;
 }
-
-/* Productos index */
-#productos-index {
-  background-color: white;
-}
-#productos-index .productos-cont {
+.fondo-cont #productos-index .productos-cont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
-#productos-index .productos-cont .calzado-1-cont, #productos-index .productos-cont .remera-boc-cont, #productos-index .productos-cont .conjunto-riv-cont, #productos-index .productos-cont .conjunto-arg-cont, #productos-index .productos-cont .calzado-3-cont, #productos-index .productos-cont .calzado-2-cont {
+.fondo-cont #productos-index .productos-cont .calzado-1-cont, .fondo-cont #productos-index .productos-cont .remera-boc-cont, .fondo-cont #productos-index .productos-cont .conjunto-riv-cont, .fondo-cont #productos-index .productos-cont .conjunto-arg-cont, .fondo-cont #productos-index .productos-cont .calzado-3-cont, .fondo-cont #productos-index .productos-cont .calzado-2-cont {
   border: 4px solid;
   border-radius: 10px;
   padding: 10px;
@@ -154,9 +158,18 @@ footer .whatsapp img, footer .instagram img {
   justify-self: center;
   background-color: aqua;
 }
-#productos-index .productos-cont .calzado-1-cont img, #productos-index .productos-cont .remera-boc-cont img, #productos-index .productos-cont .conjunto-riv-cont img, #productos-index .productos-cont .conjunto-arg-cont img, #productos-index .productos-cont .calzado-3-cont img, #productos-index .productos-cont .calzado-2-cont img {
+.fondo-cont #productos-index .productos-cont .calzado-1-cont img, .fondo-cont #productos-index .productos-cont .remera-boc-cont img, .fondo-cont #productos-index .productos-cont .conjunto-riv-cont img, .fondo-cont #productos-index .productos-cont .conjunto-arg-cont img, .fondo-cont #productos-index .productos-cont .calzado-3-cont img, .fondo-cont #productos-index .productos-cont .calzado-2-cont img {
   width: 300px;
-  height: 200px;
+  height: auto;
+}
+.fondo-cont #productos-index .productos-cont .calzado-1-cont p, .fondo-cont #productos-index .productos-cont .remera-boc-cont p, .fondo-cont #productos-index .productos-cont .conjunto-riv-cont p, .fondo-cont #productos-index .productos-cont .conjunto-arg-cont p, .fondo-cont #productos-index .productos-cont .calzado-3-cont p, .fondo-cont #productos-index .productos-cont .calzado-2-cont p {
+  text-align: end;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.fondo-cont #productos-index .productos-cont .calzado-1-cont p span, .fondo-cont #productos-index .productos-cont .remera-boc-cont p span, .fondo-cont #productos-index .productos-cont .conjunto-riv-cont p span, .fondo-cont #productos-index .productos-cont .conjunto-arg-cont p span, .fondo-cont #productos-index .productos-cont .calzado-3-cont p span, .fondo-cont #productos-index .productos-cont .calzado-2-cont p span {
+  text-decoration: line-through;
+  margin-right: 10px;
 }
 /* Productos pag */
 .titulo-productos {
@@ -165,11 +178,11 @@ footer .whatsapp img, footer .instagram img {
   width: fit-content;
   margin: auto;
   font-size: 40px;
+  border: 3px solid;
+  border-radius: 15px;
+  background-color: aqua;
 }
 
-#productos {
-  background-color: white;
-}
 #productos .productos-pagina {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -190,6 +203,11 @@ footer .whatsapp img, footer .instagram img {
 #productos .productos-pagina .calzado-4-cont img, #productos .productos-pagina .remera-ban-cont img, #productos .productos-pagina .remera-boc-2-cont img, #productos .productos-pagina .remera-rac-cont img, #productos .productos-pagina .remera-vel-cont img, #productos .productos-pagina .calzado-7-cont img, #productos .productos-pagina .calzado-6-cont img, #productos .productos-pagina .calzado-5-cont img {
   width: 240px;
 }
+#productos .productos-pagina .calzado-4-cont p, #productos .productos-pagina .remera-ban-cont p, #productos .productos-pagina .remera-boc-2-cont p, #productos .productos-pagina .remera-rac-cont p, #productos .productos-pagina .remera-vel-cont p, #productos .productos-pagina .calzado-7-cont p, #productos .productos-pagina .calzado-6-cont p, #productos .productos-pagina .calzado-5-cont p {
+  text-align: end;
+  font-weight: bold;
+  margin-top: 10px;
+}
 /* Pagina Nosotros */
 .titulo-nosotros {
   width: -webkit-fit-content;
@@ -197,6 +215,10 @@ footer .whatsapp img, footer .instagram img {
   width: fit-content;
   margin: auto;
   font-size: 40px;
+  border: 3px solid;
+  border-radius: 15px;
+  background-color: aqua;
+  margin-bottom: 5px;
 }
 
 #nosotros {
@@ -210,6 +232,7 @@ footer .whatsapp img, footer .instagram img {
   border: 5px dashed;
   padding: 20px;
   width: 700px;
+  background-color: white;
 }
 #nosotros .nosotros-text p {
   font-size: x-large;
@@ -224,6 +247,9 @@ footer .whatsapp img, footer .instagram img {
   width: fit-content;
   margin: auto;
   font-size: 40px;
+  border: 3px solid;
+  border-radius: 15px;
+  background-color: aqua;
 }
 
 #ubicacion {
@@ -238,6 +264,7 @@ footer .whatsapp img, footer .instagram img {
   padding: 10px;
   width: 320px;
   justify-self: center;
+  background-color: white;
 }
 
 /* Pagina Contacto */
@@ -267,57 +294,62 @@ footer .whatsapp img, footer .instagram img {
   #header .header-content {
     flex-direction: column;
   }
-  #productos-index .productos-cont {
+  .fondo-cont #productos-index .productos-cont {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 3px;
   }
-  #productos-index .productos-cont .calzado-1-cont, #productos-index .productos-cont .calzado-2-cont, #productos-index .productos-cont .calzado-3-cont, #productos-index .productos-cont .conjunto-arg-cont, #productos-index .productos-cont .conjunto-riv-cont, #productos-index .productos-cont .remera-boc-cont {
+  .fondo-cont #productos-index .productos-cont .calzado-1-cont, .fondo-cont #productos-index .productos-cont .calzado-2-cont, .fondo-cont #productos-index .productos-cont .calzado-3-cont, .fondo-cont #productos-index .productos-cont .conjunto-arg-cont, .fondo-cont #productos-index .productos-cont .conjunto-riv-cont, .fondo-cont #productos-index .productos-cont .remera-boc-cont {
     width: 186px;
   }
-  #productos-index .productos-cont .calzado-1-cont img, #productos-index .productos-cont .calzado-2-cont img, #productos-index .productos-cont .calzado-3-cont img, #productos-index .productos-cont .conjunto-arg-cont img, #productos-index .productos-cont .conjunto-riv-cont img, #productos-index .productos-cont .remera-boc-cont img {
+  .fondo-cont #productos-index .productos-cont .calzado-1-cont img, .fondo-cont #productos-index .productos-cont .calzado-2-cont img, .fondo-cont #productos-index .productos-cont .calzado-3-cont img, .fondo-cont #productos-index .productos-cont .conjunto-arg-cont img, .fondo-cont #productos-index .productos-cont .conjunto-riv-cont img, .fondo-cont #productos-index .productos-cont .remera-boc-cont img {
     width: 150px;
     height: 100px;
   }
-  #productos-index .productos-cont .calzado-2-cont {
+  .fondo-cont #productos-index .productos-cont .calzado-2-cont {
     width: 186px;
   }
-  #productos-index .productos-cont .calzado-2-cont img {
+  .fondo-cont #productos-index .productos-cont .calzado-2-cont img {
     width: 150px;
     height: 100px;
   }
-  #productos-index .productos-cont .calzado-3-cont {
+  .fondo-cont #productos-index .productos-cont .calzado-3-cont {
     width: 186px;
   }
-  #productos-index .productos-cont .calzado-3-cont img {
+  .fondo-cont #productos-index .productos-cont .calzado-3-cont img {
     width: 150px;
     height: 100px;
   }
-  #productos-index .productos-cont .conjunto-arg-cont {
+  .fondo-cont #productos-index .productos-cont .conjunto-arg-cont {
     width: 186px;
   }
-  #productos-index .productos-cont .conjunto-arg-cont img {
+  .fondo-cont #productos-index .productos-cont .conjunto-arg-cont img {
     width: 150px;
     height: 100px;
   }
-  #productos-index .productos-cont .conjunto-riv-cont {
+  .fondo-cont #productos-index .productos-cont .conjunto-riv-cont {
     width: 186px;
   }
-  #productos-index .productos-cont .conjunto-riv-cont img {
+  .fondo-cont #productos-index .productos-cont .conjunto-riv-cont img {
     width: 150px;
     height: 100px;
   }
-  #productos-index .productos-cont .conjunto-boc-cont {
+  .fondo-cont #productos-index .productos-cont .conjunto-boc-cont {
     width: 186px;
   }
-  #productos-index .productos-cont .conjunto-boc-cont img {
+  .fondo-cont #productos-index .productos-cont .conjunto-boc-cont img {
     width: 150px;
     height: 100px;
   }
-  #marcas .marcas_content {
+  .fondo-cont #marcas .marcas_content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .fondo-cont #marcas .marcas_content .marca__1, .fondo-cont #marcas .marcas_content .marca__2, .fondo-cont #marcas .marcas_content .marca__3, .fondo-cont #marcas .marcas_content .marca__4, .fondo-cont #marcas .marcas_content .marca__5, .fondo-cont #marcas .marcas_content .marca__6 {
+    margin: auto;
+    background-color: #c3c3c3;
   }
   #productos .productos-pagina {
     display: grid;
@@ -370,17 +402,17 @@ footer .whatsapp img, footer .instagram img {
     justify-self: center;
     margin-bottom: 5px;
   }
-  #promo h2 {
+  .fondo-cont #promo h2 {
     font-size: 30px;
   }
-  #promo .img-descuento img {
+  .fondo-cont #promo .img-descuento img {
     width: 100%;
   }
-  #productos-index .productos-cont {
+  .fondo-cont #productos-index .productos-cont {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  #descuento .descuento-cont img {
+  .fondo-cont #descuento .descuento-cont img {
     width: 100%;
   }
   .titulo-productos {

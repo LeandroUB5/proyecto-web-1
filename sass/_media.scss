@@ -4,60 +4,67 @@
             flex-direction: column;
         }
     }
-    #productos-index{
-        .productos-cont{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 3px;
-            .calzado-1-cont{
-                width: 186px;
-                img{
-                    width: 150px;
-                    height: 100px;
+    .fondo-cont{
+        #productos-index{
+            .productos-cont{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 3px;
+                    .calzado-1-cont{
+                        width: 186px;
+                        img{
+                            width: 150px;
+                            height: 100px;
+                        }
+                    }
+                    .calzado-2-cont{
+                        width: 186px;
+                        img{
+                            width: 150px;
+                            height: 100px;
+                        }
+                    }
+                    .calzado-3-cont{
+                        width: 186px;
+                        img{
+                        width: 150px;
+                        height: 100px;
+                        }
+                    }
+                .conjunto-arg-cont{
+                    width: 186px;
+                    img{
+                        width: 150px;
+                        height: 100px;
+                    }
                 }
-            }
-            .calzado-2-cont{
-                width: 186px;
-                img{
-                    width: 150px;
-                    height: 100px;
+                .conjunto-riv-cont{
+                    width: 186px;
+                    img{
+                        width: 150px;
+                        height: 100px;
+                    }
                 }
-            }
-            .calzado-3-cont{
-                width: 186px;
-                img{
-                    width: 150px;
-                    height: 100px;
-                }
-            }
-            .conjunto-arg-cont{
-                width: 186px;
-                img{
-                    width: 150px;
-                    height: 100px;
-                }
-            }
-            .conjunto-riv-cont{
-                width: 186px;
-                img{
-                    width: 150px;
-                    height: 100px;
-                }
-            }
-            .conjunto-boc-cont{
-                width: 186px;
-                img{
-                    width: 150px;
-                    height: 100px;
+                .conjunto-boc-cont{
+                    width: 186px;
+                    img{
+                        width: 150px;
+                        height: 100px;
+                    }
                 }
             }
         }
-    }
-    #marcas{
-        .marcas_content{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+        #marcas{
+            .marcas_content{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                .marca__1{
+                    margin: auto;
+                    background-color: #c3c3c3;
+                }
+            }
         }
     }
     #productos{
@@ -123,26 +130,29 @@
         }
         
     }
-    #promo{
-        h2{
-            font-size: 30px;
-        }
-        .img-descuento{
-            img{
-                width: 100%;
+    .fondo-cont{
+
+        #promo{
+            h2{
+                font-size: 30px;
+            }
+            .img-descuento{
+                img{
+                    width: 100%;
+                }
             }
         }
-    }
-    #productos-index{
-        .productos-cont{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+        #productos-index{
+            .productos-cont{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
         }
-    }
-    #descuento{
-        .descuento-cont{
-            img{
-                width: 100%;
+        #descuento{
+            .descuento-cont{
+                img{
+                    width: 100%;
+                }
             }
         }
     }

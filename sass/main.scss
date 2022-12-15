@@ -6,55 +6,70 @@
     width: fit-content;
     margin: auto;
     font-size: 40px;
+    border: 3px solid;
+    border-radius: 15px;
+    background-color: aqua;
 }
-/* index-promo */
-#promo{
-    background-color: white;
-    & h2{
-        @include tittle;
-    }
-    & .img-descuento{
-        width: fit-content;
-        margin: auto;
-        margin-top: 10px;
-        img{
-            width: 1000px;
+.fondo-cont{
+    background-image: url("../img/fondo/logopagfondo3.png");
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* index-promo */
+    #promo{
+        & h2{
+            @include tittle;
         }
-    }
-}
-/* Productos index */
-#productos-index{
-    background-color: white;
-    & .productos-cont{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        .calzado-1-cont{
-            border: 4px solid;
-            border-radius: 10px;
-            padding: 10px;
+        & .img-descuento{
             width: fit-content;
-            justify-self: center;
-            background-color: aqua;
+            margin: auto;
+            margin-top: 10px;
             img{
-                width: 300px;
-                height: 200px;
+                width: 1000px;
             }
         }
-        .calzado-2-cont{
-            @extend .calzado-1-cont;
-        }
-        .calzado-3-cont{
-            @extend .calzado-1-cont;
-        }
-        .conjunto-arg-cont{
-            @extend .calzado-1-cont;
-        }
-        .conjunto-riv-cont{
-            @extend .calzado-1-cont;
-        }
-        .remera-boc-cont{
-            @extend .calzado-1-cont;
+    }
+    /* Productos index */
+    #productos-index{
+         & .productos-cont{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            .calzado-1-cont{
+                border: 4px solid;
+                border-radius: 10px;
+                padding: 10px;
+                width: fit-content;
+                justify-self: center;
+                background-color: aqua;
+                img{
+                    width: 300px;
+                    height: auto;
+                }
+                p{
+                    text-align: end;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    span{
+                        text-decoration: line-through;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .calzado-2-cont{
+                @extend .calzado-1-cont;
+            }
+            .calzado-3-cont{
+                @extend .calzado-1-cont;
+            }
+            .conjunto-arg-cont{
+                @extend .calzado-1-cont;
+            }
+            .conjunto-riv-cont{
+                @extend .calzado-1-cont;
+            }
+            .remera-boc-cont{
+                @extend .calzado-1-cont;
+            }
         }
     }
 }
@@ -64,7 +79,6 @@
     @include tittle;
 }
 #productos{
-    background-color: white;
     .productos-pagina{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -82,6 +96,11 @@
             background-color: aqua;
             img{
                 width: 240px;
+            }
+            p{
+                text-align: end;
+                font-weight: bold;
+                margin-top: 10px;
             }
         }
         .calzado-5-cont{
@@ -111,6 +130,7 @@
 /* Pagina Nosotros */
 .titulo-nosotros{
     @include tittle;
+    margin-bottom: 5px;
 }
 #nosotros{
     display: flex;
@@ -124,6 +144,7 @@
         border: 5px dashed;
         padding: 20px;
         width: 700px;
+        background-color: white;
         p{
             font: {
                 size: x-large;
@@ -149,6 +170,7 @@
         padding: 10px;
         width: 320px;
         justify-self: center;
+        background-color: white;
     }
 }
 
