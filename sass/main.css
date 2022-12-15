@@ -55,6 +55,8 @@
   padding: 5px;
   border: 2px solid;
   border-radius: 15px;
+  width: 120px;
+  text-align: center;
 }
 #header .menu ul li a:hover {
   background-color: purple;
@@ -75,6 +77,8 @@
   padding: 5px;
   border-radius: 25px;
   margin: 10px;
+  width: 120px;
+  text-align: center;
   background: linear-gradient(to right, #00dbde, #fc00ff) !important;
 }
 
@@ -136,6 +140,7 @@ footer .whatsapp img, footer .instagram img {
   background-image: url("../img/fondo/logopagfondo.png");
   padding-top: 10px;
   padding-bottom: 10px;
+  overflow: hidden;
   /* index-promo */
   /* Productos index */
 }
